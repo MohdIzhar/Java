@@ -14,8 +14,8 @@ public class Binary_to_Decimal
 		while(BinaryNumber != 0)
 		{
 			remainder = (int)(BinaryNumber % 10);
-			sum = sum + remainder * i;
-			i = i*2;
+			sum += remainder * i;
+			i *=2;
 			BinaryNumber = BinaryNumber / 10;
 		}
 		System.out.print("Decimal Value is: "+sum);
